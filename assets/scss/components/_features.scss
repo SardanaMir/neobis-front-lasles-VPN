@@ -1,0 +1,29 @@
+.features{
+    min-height: 641px;
+    padding-top: 95px;
+    padding-bottom: 126px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 170px;
+        row-gap: 20px;
+        align-items: end;
+    }
+    &__items{
+        align-items: start
+    }
+    &__item{
+        display: flex;
+        column-gap: 10px;
+        margin-top: 15px;
+        align-items: center;
+    }
+    &__img{
+        grid-row-start: 1; 
+        grid-row-end: 3; 
+    }
+    &__subtitle{
+        align-items:end;
+    }
+}

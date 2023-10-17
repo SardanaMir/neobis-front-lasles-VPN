@@ -1,0 +1,15 @@
+.btn {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: $main-color;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 156.25% */
+    margin-top: 30px;
+    grid-row-start: 3;
+    cursor: pointer;
+}

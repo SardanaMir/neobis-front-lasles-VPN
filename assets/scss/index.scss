@@ -1,0 +1,25 @@
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import "normalize";
+@import "variables";
+@import "mixin";
+@import "placeholder";
+@import "typography";
+@import "components/button";
+@import "components/description";
+@import "components/subtitle";
+@import "components/header";
+@import "components/features";
+@import "components/footer";
+@import "components/promo";
+@import "components/plan";
+@import "components/network";
+@import "components/sponsore";
+@import "components/feedback";
+@import "components/subscribe";
+@import "components/footer";
+
+.container{
+    max-width: 1140px;
+    display: block;
+    margin: 0 auto;
+}

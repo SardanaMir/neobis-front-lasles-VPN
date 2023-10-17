@@ -1,0 +1,33 @@
+.footer{
+    min-height: 563px;
+    background: #F8F8F8;
+    // position: relative;
+    padding-top: 178px;
+    &__wrapper{
+        width: 340px;
+    }
+    &__descr{
+        margin-top: 20px;
+        text-align: left;
+        color: #AFB5C0;
+    }
+    &__smm-links{
+        margin-top: 30px;
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__link{
+        margin-top: 20px;
+    }
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

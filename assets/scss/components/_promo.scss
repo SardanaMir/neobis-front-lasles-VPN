@@ -1,0 +1,85 @@
+.promo{
+    padding-top: 45px;
+    min-height: 100vh;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        margin-top: 88px;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+    &__title{
+        color: #0B132A;
+        font-family: Rubik;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 70px; /* 140% */
+    }
+    // &__btn{
+    //     width: 250px;
+    //     height: 60px;
+    //     border-radius: 10px;
+    //     background: $main-color;
+    //     color: #FFF;
+    //     font-family: Rubik;
+    //     font-size: 16px;
+    //     font-style: normal;
+    //     font-weight: 700;
+    //     line-height: 25px; /* 156.25% */
+    //     margin-top: 30px;
+    //     grid-row-start: 3;
+    //     cursor: pointer;
+    // }
+    &__img{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 140px;
+        width: 1140px;
+        height: 200px;
+        border-radius: 10px;
+        background: #FFF;
+
+        -webkit-box-shadow: 0px 28px 65px -32px rgba(13, 16, 37, 0.6);
+        -moz-box-shadow: 0px 28px 65px -32px rgba(13, 16, 37, 0.6);
+        box-shadow: 0px 28px 65px -32px rgba(13, 16, 37, 0.6);
+    }
+    &__item{
+        display: flex;
+        gap: 36.5px;
+    }
+    &__circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 55px;
+        height: 55px;
+        border-radius: 70px;
+        background: #FFECEC;
+        border: none;
+    }
+    &__item-number{
+        color: #0B132A;
+        font-family: Rubik;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 120% */
+    }
+    &__subtitle{
+        color: #4F5665;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 150% */
+    }
+}

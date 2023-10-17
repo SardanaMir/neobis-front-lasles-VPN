@@ -1,0 +1,104 @@
+.plan{
+    min-height: 1157px;
+    padding-top: 80px;
+    background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+    
+    &__subtitle-block{
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__title{
+        color: #0B132A;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 166.667% */
+    }
+    &__blocks{
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+    }
+    &__block{
+        display: grid;
+        grid-template-rows: 167px 30px auto auto;
+        row-gap: 30px;
+        align-items: start;
+        margin-top: 60px;
+        max-width: 330px;
+        min-height: 760px;
+        border-radius: 10px;
+        border: 2px solid #DDD;
+        background: #FFF;
+        padding-top: 80px;
+        padding-left: 68px;
+        padding-right: 68px;
+        padding-bottom: 50px;
+        transition: all 0.5s;
+        &:hover {
+            border: 2px solid $main-color;
+
+        }
+    }
+    &__title{
+        display: block;
+        margin: 0 auto;
+    }
+    &__items{
+        display: block;
+        margin: 0 auto;
+    }
+    &__item{
+        display: flex;
+        gap: 15px;
+    }
+    &__img{
+        display: block;
+        margin: 0 auto;
+    }
+    &__price{
+        color: #0B132A;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 120% */
+        &-wrapper{
+            grid-row-start: 5;
+        }
+    }
+    &__btn{
+        display: block;
+        margin: 0 auto;
+        width: 177.876px;
+        height: 45px;
+        flex-shrink: 0;
+        border-radius: 50px;
+        border: 2px solid $main-color;
+        background-color: rgba(1,1,1,0);
+        color: $main-color;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+        &:hover {
+            box-shadow: 0 0 40px 40px $main-color inset;
+            color: #fff;
+        }
+        &:active{
+            top: .5em;
+            left: .5em;
+            box-shadow: 0 0 0 60px rgba(0,0,0,.4) inset;
+            transform: translateY(5px);
+            transition: all 0.3s;
+        }
+    }
+}

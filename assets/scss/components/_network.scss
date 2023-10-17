@@ -1,0 +1,11 @@
+.network{
+    padding-top: 80px;
+    background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+    &__subtitle-block{
+        display: block;
+        margin: 0 auto;
+    }
+    &__descr{
+        margin-bottom: 100px;
+    }
+}
