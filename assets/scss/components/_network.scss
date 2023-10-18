@@ -8,4 +8,14 @@
     &__descr{
         margin-bottom: 100px;
     }
+    &__map{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .network{
+        &__descr{
+            margin-bottom: 50px;
+        }
+    }
 }

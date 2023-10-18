@@ -4,6 +4,7 @@
 @import "mixin";
 @import "placeholder";
 @import "typography";
+@import "components/container";
 @import "components/button";
 @import "components/description";
 @import "components/subtitle";
@@ -18,8 +19,18 @@
 @import "components/subscribe";
 @import "components/footer";
 
-.container{
-    max-width: 1140px;
-    display: block;
-    margin: 0 auto;
-}
+
+
+
+// @media screen and (max-width: 1200px){
+
+// }
+// @media screen and (max-width: 992px){
+
+// }
+// @media screen and (max-width: 768px){
+
+// }
+// @media screen and (max-width: 576px){
+
+// }

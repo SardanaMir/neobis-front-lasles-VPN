@@ -31,3 +31,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 992px){
+    .footer{
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 576px){
+    .footer{
+        padding-top: 50px;
+        &__wrapper{
+            grid-row-start: 2;
+        }
+    }
+    .wrapper{
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+}

@@ -9,8 +9,8 @@
         margin-top: 60px;
     }
     &__block{
-        width: 400px;
-        height: 230px;
+        max-width: 400px;
+        min-height: 230px;
         border-radius: 10px;
         border: 2px solid #DDD;
         background: #FFF;
@@ -25,7 +25,6 @@
     &__name{
         color: #0B132A;
         text-align: center;
-        font-family: Rubik;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -74,5 +73,33 @@
         display: flex;
         justify-content: flex-end;
         gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 992px){
+    .feedback{
+        &__block{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    #feedback-2, #feedback-3{
+        display: none;
+    }
+}
+@media screen and (max-width: 576px){
+    .feedback{
+        &__carousel{
+            justify-content: center;
+        }
+    }
+    .arrows{        
+        margin-top: 30px;
+    }
+    #feedback-2, #feedback-3{
+        display: none;
     }
 }

@@ -1,8 +1,8 @@
 .header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .authorization{
     display: flex;
@@ -15,28 +15,27 @@
         background-color: rgba(1,1,1,0);
         border: 1px solid $main-color;
         color: $main-color;
-        font-family: Rubik;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
         cursor: pointer;
         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-        &:hover {
-            box-shadow: 0 0 40px 40px $main-color inset;
-            color: #fff;
+        &:hover{
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+            transition: 0.5s all;
         }
         &:active{
             top: .5em;
             left: .5em;
-            box-shadow: 0 0 0 60px rgba(0,0,0,.4) inset;
+            box-shadow: 0 0 0 60px $main-color inset;
             transform: translateY(5px);
-            transition: all 0.3s;
+            transition: all 0.5s;
         }
     }
     &__sign-in{
         color: #0B132A;
-        font-family: Rubik;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -47,7 +46,6 @@
             transition: all 0.3s;
         }
     }
-
 }
 .logo{
     display: flex;
@@ -55,12 +53,10 @@
     gap: 10px;
     &__title{
         color: #0B132A;
-        font-family: Rubik;
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-
     }
 }
 
@@ -71,7 +67,6 @@
     }
     &__link{
         color: #4F5665;
-        font-family: Rubik;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -82,5 +77,26 @@
             transform: translateY(5px);
             transition: all 0.3s;
         }
+    }
+}
+@media screen and (max-width: 992px){
+    .menu{
+        &__list{
+            gap: 10px;
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    .header{
+        display: none;
+    }
+    .hamburger span {
+        display: block;
+        height: 2px;
+        width: 30px;
+        background-color: $main-color;
+        margin-bottom: 4px;
+        -webkit-transition: .5s all;
+        transition: .5s all;
     }
 }
