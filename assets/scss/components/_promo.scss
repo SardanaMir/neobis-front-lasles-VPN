@@ -1,6 +1,5 @@
 .promo{
     padding-top: 45px;
-    min-height: 100vh;
     &__wrapper{
         display: flex;
         margin-top: 88px;
@@ -27,7 +26,6 @@
         height: 200px;
         border-radius: 10px;
         background: #FFF;
-
         -webkit-box-shadow: 0px 28px 65px -32px rgba(13, 16, 37, 0.6);
         -moz-box-shadow: 0px 28px 65px -32px rgba(13, 16, 37, 0.6);
         box-shadow: 0px 28px 65px -32px rgba(13, 16, 37, 0.6);
@@ -36,11 +34,13 @@
         display: flex;
         gap: 36.5px;
     }
+    &__descr{
+        margin-bottom: 30px;
+    }
     &__circle{
         display: flex;
         justify-content: center;
         align-items: center;
-
         width: 55px;
         height: 55px;
         border-radius: 70px;
@@ -77,10 +77,6 @@
     }
 }
 @media screen and (max-width: 576px) {
-    /* Ваши стили для мобильных устройств */
-    .container{
-        padding: 0px 20px;    
-    }
     .promo{
         &__wrapper{
             grid-template-columns: 1fr;
@@ -99,6 +95,5 @@
                 text-align: center;
             }
         }
-
     }
 }
